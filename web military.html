@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osobní IT Profil | Airsoft & Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Moderní "military-tech" design */
+        :root {
+            --primary-color: #556b2f; /* Dark Olive Green */
+            --accent-color: #d35400;  /* Oranžová pro zvýraznění */
+            --bg-color: #1a1a1a;      /* Tmavé pozadí */
+            --card-bg: #2d2d2d;       /* Barva sekcí */
+            --text-color: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1590502160462-099660383023?q=80&w=1000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid var(--primary-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
+        h2 { color: var(--primary-color); text-transform: uppercase; border-bottom: 1px solid #444; padding-bottom: 10px; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .card {
+            background: #383838;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-5px); border: 1px solid var(--accent-color); }
+
+        .rules-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .rules-list li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .rules-list li::before {
+            content: "\f058"; /* FontAwesome check icon */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tomáš Koten</h1>
+    <p>IT Student & Airsoft Operations Enthusiast</p>
+</header>
+
+<div class="container">
+    
+    <section id="about">
+        <h2><i class="fas fa-id-card"></i> Kdo jsem</h2>
+        <p>Jsem student IT se zálibou v military technologiích. Spojuji svět jedniček a nul s adrenalinem na airsoftovém hřišti. Věřím, že moderní technologie, jako je analýza dat nebo IoT, mohou radikálně zlepšit zážitek z taktických her.</p>
+    </section>
+
+    <section id="skills">
+        <h2><i class="fas fa-terminal"></i> Co umím</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-code fa-2x"></i>
+                <h3>Web Development</h3>
+                <p>HTML5, CSS3 a základy JavaScriptu.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-network-wired fa-2x"></i>
+                <h3>Síťová infrastruktura</h3>
+                <p>Konfigurace mesh sítí pro komunikaci v terénu.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-microchip fa-2x"></i>
+                <h3>Hardware</h3>
+                <p>Práce s Arduinem pro tvorbu elektronických rekvizit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="airsoft">
+        <h2><i class="fas fa-shield-halved"></i> Airsoft & Metodika</h2>
+        <p>Zaměřuji se na tvorbu digitálních standardů pro férovou hru. Moje vize zahrnuje jasná a vymahatelná pravidla:</p>
+        <ul class="rules-list">
+            <li><strong>Fair-play kód:</strong> Přiznání zásahu je základem identity hráče i programátora.</li>
+            <li><strong>Bezpečnostní protokoly:</strong> Implementace IT řešení pro nouzovou signalizaci v herním prostoru.</li>
+            <li><strong>Technické limity:</strong> Standardizace měření úsťové energie v Joulech pro zajištění bezpečnosti.</li>
+            <li><strong>Digitální brífink:</strong> Převod papírových map do interaktivních GPS podkladů.</li>
+        </ul>
+    </section>
+
+    <section id="goals">
+        <h2><i class="fas fa-map-location-dot"></i> Kam směřuji</h2>
+        <p>Mým cílem je vyvinout open-source systém pro správu airsoftových akcí (tzv. "Battle Management System"), který by v reálném čase sledoval obsazování bodů a zdravotní stav týmů pomocí mobilní aplikace.</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>Vytvořeno jako semestrální projekt v prostředí GitHub Codespaces.</p>
+    <p>&copy; 2024 | Osobní IT Profil</p>
+</footer>
+
+</body>
+</html>
